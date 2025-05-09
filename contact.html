@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Contact - Stained Glass by Christina</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <div class="header-container">
+        <h1 class="site-title">Stained Glass by Christina</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Contact Section -->
+<div class="contact-container">
+    <div class="contact-form">
+        <h2>Contact Me</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+    <!-- image to the right of the form -->
+    <div class="contact-image">
+        <img src="images/selfportrait2.jpeg" alt="Self Portrait">
+    </div>
+</div>
+
+<!--  American Glass Guild Table -->
+
+
+<div class="guild-info-section">
+    <h3>How You Can Get Involved with the American Glass Guild</h3>
+    <table class="guild-table">
+        <thead>
+            <tr>
+                <th>Option</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Become a Member</td>
+                <td>Join the American Glass Guild to connect with fellow stained glass artists and professionals.</td>
+            </tr>
+            <tr>
+                <td>Attend Webinars</td>
+                <td>Learn from experts in the field by attending webinars hosted by the American Glass Guild.</td>
+            </tr>
+            <tr>
+                <td>Attend a Conference</td>
+                <td>Experience lectures, workshops, bus tours, auctions, and a banquet at the American Glass Guild's conference.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+ <p class="guild-link">
+        <a href="https://www.americanglassguild.org" target="_blank" class="guild-link-btn">Visit the American Glass Guild website for more information</a>
+    </p>
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-content">
+        <a href="https://www.instagram.com/_stainedglassbychristina_" target="_blank">
+            <img class="instagram-icon" src="images/instagram-icon.png" alt="Instagram" />
+        </a>
+        <div class="contact-info">
+            <p>(484) 889-8054 • xtinanina23@gmail.com</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

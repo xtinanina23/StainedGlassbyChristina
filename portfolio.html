@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Portfolio - Stained Glass by Christina</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <h1 class="site-title">Stained Glass by Christina</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="carousel-container">
+    <div class="carousel-track-container">
+        <ul class="carousel-track">
+            <li class="carousel-slide">
+                <img src="images/portfolio1.jpeg" alt="Hummingbird">
+                <div class="carousel-caption">"Hummingbird"</div>
+            </li>
+            <li class="carousel-slide">
+                <img src="images/portfolio2.jpeg" alt="Flamingo">
+                <div class="carousel-caption">"Flamingo"</div>
+            </li>
+            <li class="carousel-slide">
+                <img src="images/portfolio3.jpeg" alt="Golden Butterfly">
+                <div class="carousel-caption">"Golden Butterfly"</div>
+            </li>
+            <li class="carousel-slide">
+                <img src="images/portfolio4.jpeg" alt="Bee Happy">
+                <div class="carousel-caption">"Bee Happy"</div>
+            </li>
+            <li class="carousel-slide">
+                <img src="images/portfolio5.jpeg" alt="Purple Hummingbird">
+                <div class="carousel-caption">"Purple Hummingbird"</div>
+            </li>
+            <li class="carousel-slide">
+                <img src="images/portfolio6.jpeg" alt="Cat Eyes">
+                <div class="carousel-caption">"Cat Eyes"</div>
+            </li>
+            <li class="carousel-slide">
+                <img src="images/portfolio7.jpeg" alt="Baa">
+                <div class="carousel-caption">"Baa"</div>
+            </li>
+            <li class="carousel-slide">
+                <img src="images/portfolio8.jpeg" alt="Sun and Moon">
+                <div class="carousel-caption">"Sun and Moon"</div>
+            </li>
+            <li class="carousel-slide">
+                <img src="images/portfolio9.jpeg" alt="Angelic">
+                <div class="carousel-caption">"Angelic"</div>
+            </li>
+            <li class="carousel-slide">
+                <img src="images/portfolio10.jpeg" alt="Sunflowers">
+                <div class="carousel-caption">"Sunflowers"</div>
+            </li>
+            <li class="carousel-slide">
+                <img src="images/portfolio11.jpeg" alt="Lillies">
+                <div class="carousel-caption">"Lillies"</div>
+            </li>
+            <li class="carousel-slide">
+                <img src="images/portfolio12.jpeg" alt="Pendant">
+                <div class="carousel-caption">"Pendant"</div>
+            </li>
+            <li class="carousel-slide">
+                <img src="images/portfolio13.jpeg" alt="Butterfly">
+                <div class="carousel-caption">"Butterfly"</div>
+            </li>
+            <li class="carousel-slide">
+                <img src="images/portfolio14.jpeg" alt="Bruce Lee">
+                <div class="carousel-caption">"Bruce Lee"</div>
+            </li>
+            <li class="carousel-slide">
+                <img src="images/portfolio15.jpeg" alt="Florals">
+                <div class="carousel-caption">"Florals"</div>
+            </li>
+            <li class="carousel-slide">
+                <img src="images/portfolio16.jpeg" alt="USMC">
+                <div class="carousel-caption">"USMC"</div>
+            </li>
+            <li class="carousel-slide">
+                <img src="images/portfolio17.jpeg" alt="USMC">
+                <div class="carousel-caption">"USMC"</div>
+            </li>
+            <li class="carousel-slide">
+                <img src="images/portfolio18.jpeg" alt="USMC">
+                <div class="carousel-caption">"USMC"</div>
+            </li>
+            <li class="carousel-slide">
+                <img src="images/portfolio19.jpeg" alt="USMC">
+                <div class="carousel-caption">"USMC"</div>
+            </li>
+            <li class="carousel-slide">
+                <img src="images/portfolio20.jpeg" alt="Yellow Fusion">
+                <div class="carousel-caption">"Yellow Fusion"</div>
+            </li>
+            <li class="carousel-slide">
+                <img src="images/portfolio21.jpeg" alt="Green Fusion">
+                <div class="carousel-caption">"Green Fusion"</div>
+            </li>
+            <li class="carousel-slide">
+                <img src="images/portfolio22.jpeg" alt="Purple Fusion">
+                <div class="carousel-caption">"Purple Fusion"</div>
+            </li>
+            <li class="carousel-slide">
+                <img src="images/portfolio23.jpeg" alt="Diamond Quarry">
+                <div class="carousel-caption">"Diamond Quarry"</div>
+            </li>
+        </ul>
+    </div>
+    <button class="carousel-btn left" onclick="moveToPreviousSlide()">&#10094;</button>
+    <button class="carousel-btn right" onclick="moveToNextSlide()">&#10095;</button>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <a href="https://www.instagram.com/_stainedglassbychristina_" target="_blank">
+            <img class="instagram-icon" src="images/instagram-icon.png" alt="Instagram" />
+        </a>
+        <div class="contact-info">
+            <p>(484) 889-8054 • xtinanina23@gmail.com</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.carousel-slide');
+    const totalSlides = slides.length;
+
+    function updateCarousel() {
+        const track = document.querySelector('.carousel-track');
+        const slideWidth = slides[0].offsetWidth;
+        const newTransformValue = -(currentIndex * slideWidth);
+        track.style.transform = `translateX(${newTransformValue}px)`;
+    }
+
+    function moveToNextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateCarousel();
+    }
+
+    function moveToPreviousSlide() {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateCarousel();
+    }
+</script>
+
+</body>
+</html>
+

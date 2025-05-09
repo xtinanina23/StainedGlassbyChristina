@@ -1,0 +1,298 @@
+/* General Styles */
+body {
+    font-family: 'Bodoni Moda', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 2rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+/* Hero Section */
+.hero-section {
+    width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* About Me Section */
+.about-me-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.about-me-text {
+    width: 60%;
+}
+
+.about-me-text h3 {
+    font-size: 1.8rem;
+}
+
+.about-me-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.about-me-image {
+    width: 30%;
+}
+
+.about-me-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.contact-form {
+    width: 60%;
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #444;
+}
+
+.contact-image {
+    width: 30%;
+	padding-left: 2rem;
+}
+
+.contact-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Portfolio Section (Carousel) */
+.carousel-container {
+    position: relative;
+    max-width: 70%; /* Adjust container to be smaller */
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.carousel-track-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    justify-content: center; /* Ensure the track is centered */
+}
+
+.carousel-track {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.carousel-slide {
+    flex: 0 0 100%; 
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column; 
+}
+
+.carousel-slide img {
+    width: 50%; /* Image takes up 50% of the container */
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.carousel-caption {
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px; /* Space between image and caption */
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 10;
+}
+
+.carousel-btn.left {
+    left: 10px;
+}
+
+.carousel-btn.right {
+    right: 10px;
+}
+
+/* American Glass Guild Section */
+
+/* Link to the American Glass Guild Website */
+.guild-link {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.guild-link-btn {
+    font-size: 1.1rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #f9f9f9;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 2px solid #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.guild-link-btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* Table */
+
+.guild-info-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    margin: 2rem 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.guild-info-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.guild-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.guild-table th, .guild-table td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+.guild-table th {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+
+.guild-table td {
+    background-color: #fff;
+}
+
+.guild-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.guild-table td {
+    font-size: 1rem;
+}
+
+
+
+/* Footer Styles */
+.instagram-icon {
+    width: 30px;
+    margin: 0 10px;
+}
+
+.contact-info {
+    font-size: 1rem;
+}
+
